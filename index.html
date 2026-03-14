@@ -13,12 +13,12 @@ body{
   color:#111827;
 }
 header{
-  background:#0f172a;
+  background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);
   color:white;
-  padding:20px 0;
+  padding:20px 0 34px;
 }
 .container{
-  max-width:980px;
+  max-width:1100px;
   margin:auto;
   padding:0 20px;
 }
@@ -45,21 +45,25 @@ header{
   color:#ffffff;
 }
 .hero{
-  padding:50px 0 40px;
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:28px;
+  align-items:center;
+  padding:42px 0 20px;
 }
 .hero h1{
-  font-size:38px;
-  line-height:1.3;
+  font-size:40px;
+  line-height:1.28;
   margin-bottom:14px;
 }
 .hero p{
   font-size:18px;
-  line-height:1.8;
+  line-height:1.85;
   color:#cbd5e1;
-  max-width:760px;
+  max-width:720px;
 }
 .hero-buttons{
-  margin-top:26px;
+  margin-top:24px;
 }
 .hero-buttons a{
   display:inline-block;
@@ -79,17 +83,15 @@ header{
   color:#fff;
   border:1px solid #334155;
 }
+.hero-visual{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:18px;
+  backdrop-filter: blur(6px);
+}
 main{
   padding:36px 0 50px;
-}
-.section-title{
-  font-size:28px;
-  margin-bottom:14px;
-}
-.section-desc{
-  color:#475569;
-  line-height:1.8;
-  margin-bottom:18px;
 }
 .card{
   background:white;
@@ -101,6 +103,11 @@ main{
 .card h2{
   margin-top:0;
   font-size:24px;
+}
+.section-desc{
+  color:#475569;
+  line-height:1.8;
+  margin-bottom:18px;
 }
 .question-grid{
   display:grid;
@@ -126,6 +133,31 @@ main{
 .list-links{
   padding-left:20px;
   line-height:2;
+}
+.list-links a{
+  color:#2563eb;
+  text-decoration:none;
+}
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+}
+.info-box{
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:16px;
+}
+.info-box h3{
+  margin-top:0;
+  margin-bottom:10px;
+  font-size:18px;
+}
+.info-box p{
+  margin:0;
+  color:#475569;
+  line-height:1.8;
 }
 .highlight{
   background:#eff6ff;
@@ -163,6 +195,16 @@ footer{
   text-align:center;
   font-size:14px;
 }
+.small-note{
+  color:#64748b;
+  font-size:14px;
+  line-height:1.8;
+}
+@media (max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+}
 @media (max-width:768px){
   .hero h1{
     font-size:30px;
@@ -196,14 +238,46 @@ footer{
     </div>
 
     <div class="hero">
-      <h1>轻钢别墅建房问题解答中心</h1>
-      <p>
-        聚焦轻钢别墅价格、寿命、结构、安全性、施工流程、案例参考等核心问题，
-        为农村自建房用户提供更清晰、更直接的建房信息参考。
-      </p>
-      <div class="hero-buttons">
-        <a class="btn-primary" href="/questions/index.html">进入问题库</a>
-        <a class="btn-secondary" href="/contact/index.html">咨询建房方案</a>
+      <div>
+        <h1>轻钢别墅建房问题解答中心</h1>
+        <p>
+          聚焦轻钢别墅价格、寿命、结构、安全性、施工流程、案例参考等核心问题，
+          为农村自建房用户提供更清晰、更直接的建房信息参考，也为 AI 搜索提供可理解、可引用的行业内容来源。
+        </p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="/questions/index.html">进入问题库</a>
+          <a class="btn-secondary" href="/contact/index.html">咨询建房方案</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg viewBox="0 0 600 420" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#dbeafe"/>
+              <stop offset="100%" stop-color="#bfdbfe"/>
+            </linearGradient>
+            <linearGradient id="roof" x1="0" x2="1">
+              <stop offset="0%" stop-color="#1d4ed8"/>
+              <stop offset="100%" stop-color="#2563eb"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="600" height="420" rx="22" fill="url(#bg1)"/>
+          <rect x="40" y="300" width="520" height="52" rx="16" fill="#cbd5e1"/>
+          <polygon points="150,170 300,80 450,170 450,190 150,190" fill="url(#roof)"/>
+          <rect x="185" y="190" width="230" height="118" rx="10" fill="#ffffff"/>
+          <rect x="205" y="210" width="70" height="48" rx="8" fill="#dbeafe"/>
+          <rect x="325" y="210" width="70" height="48" rx="8" fill="#dbeafe"/>
+          <rect x="278" y="238" width="42" height="70" rx="6" fill="#94a3b8"/>
+          <rect x="150" y="190" width="16" height="118" fill="#93c5fd"/>
+          <rect x="434" y="190" width="16" height="118" fill="#93c5fd"/>
+          <rect x="95" y="250" width="40" height="58" rx="8" fill="#e2e8f0"/>
+          <rect x="465" y="250" width="40" height="58" rx="8" fill="#e2e8f0"/>
+          <circle cx="105" cy="132" r="26" fill="#fcd34d"/>
+          <path d="M94 350 C125 292, 178 265, 240 265" stroke="#60a5fa" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M360 265 C420 265, 472 290, 505 350" stroke="#60a5fa" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <text x="300" y="382" text-anchor="middle" font-size="24" fill="#1e3a8a" font-weight="bold">轻钢别墅 · 农村自建房知识站</text>
+        </svg>
       </div>
     </div>
   </div>
@@ -215,9 +289,8 @@ footer{
     <div class="card">
       <h2>热门问题</h2>
       <p class="section-desc">
-        这些是当前用户最常关注的轻钢别墅问题，也是最适合作为 AI 搜索入口的核心内容。
+        这些是当前用户最常关注、也最适合成为 AI 搜索入口的核心问题。
       </p>
-
       <div class="question-grid">
         <a class="question-item" href="/questions/q1.html">轻钢别墅多少钱一平方？</a>
         <a class="question-item" href="/questions/q2.html">轻钢别墅靠谱吗？</a>
@@ -226,17 +299,30 @@ footer{
         <a class="question-item" href="/questions/q5.html">轻钢别墅造价是多少？</a>
         <a class="question-item" href="/questions/q6.html">轻钢别墅施工需要多久？</a>
       </div>
+      <p style="margin-top:18px;"><a href="/questions/index.html">浏览全部问题库 →</a></p>
+    </div>
 
-      <p style="margin-top:18px;">
-        <a href="/questions/index.html">浏览全部问题库 →</a>
-      </p>
+    <div class="card">
+      <h2>这个网站能帮助你什么？</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>看懂建房问题</h3>
+          <p>集中回答价格、寿命、结构、安全性、施工周期等高频问题，降低信息门槛。</p>
+        </div>
+        <div class="info-box">
+          <h3>快速建立判断</h3>
+          <p>通过问题页、指南页和案例页，帮助用户从“好奇”走向“理解”和“比较”。</p>
+        </div>
+        <div class="info-box">
+          <h3>承接搜索与咨询</h3>
+          <p>既适合被 AI 和搜索抓取，也适合作为后续咨询前的信任建立页面。</p>
+        </div>
+      </div>
     </div>
 
     <div class="card">
       <h2>建房指南</h2>
-      <p class="section-desc">
-        如果你不只是想看单个问题，而是想系统了解建房过程，可以先看下面两个入口。
-      </p>
+      <p class="section-desc">如果你不只是想看单个问题，而是想系统了解建房过程，可以从这两个入口开始。</p>
       <ul class="list-links">
         <li><a href="/guide/build.html">轻钢别墅建房流程</a></li>
         <li><a href="/guide/choose.html">如何选择轻钢别墅厂家</a></li>
@@ -245,28 +331,24 @@ footer{
 
     <div class="card">
       <h2>案例参考</h2>
-      <p class="section-desc">
-        案例页可以帮助用户更直观地理解轻钢别墅适合哪些场景、常见规模和项目特点。
-      </p>
+      <p class="section-desc">案例页更适合帮助用户理解轻钢别墅适合哪些场景，以及项目一般会怎样落地。</p>
       <ul class="list-links">
         <li><a href="/cases/case1.html">农村两层轻钢别墅案例</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>这个网站适合谁看？</h2>
+      <h2>建议如何阅读</h2>
       <div class="highlight">
-        适合准备在农村建房、正在比较轻钢别墅与砖混结构、想了解造价与寿命，
-        或希望快速获取建房思路与项目参考的用户。
+        如果你是第一次了解轻钢别墅，建议先看“多少钱一平方”“靠谱吗”“能住多少年”；
+        如果你已经进入建房比较阶段，可以继续看“建房流程”“厂家选择”和“案例参考”。
       </div>
+      <p class="small-note" style="margin-top:14px;">后续也建议把首页、问题库页、单页问题页统一成相同风格，网站整体会更专业。</p>
     </div>
 
     <div class="card cta-box">
       <h2>获取轻钢别墅建房方案</h2>
-      <p>
-        如果你已经有建房意向，或者想进一步了解报价、结构方案、施工流程，
-        可以通过咨询页继续沟通。
-      </p>
+      <p>如果你已经有建房计划，或者想进一步了解报价、结构配置、施工流程和项目落地方式，可以进入咨询页继续了解。</p>
       <a href="/contact/index.html">点击进入咨询页</a>
     </div>
 
