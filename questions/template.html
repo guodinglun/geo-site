@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="utf-8">
+
+<title>{{title}}</title>
+
+<meta name="description" content="{{description}}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [{
+   "@type": "Question",
+   "name": "{{question}}",
+   "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "{{answer_short}}"
+   }
+ }]
+}
+</script>
+
+<style>
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+background:#f8fafc;
+color:#111827;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:22px 0;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:0 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav{
+margin-top:8px;
+}
+
+nav a{
+color:#cbd5e1;
+margin-right:16px;
+text-decoration:none;
+font-size:14px;
+}
+
+main{
+padding:40px 0;
+}
+
+h1{
+font-size:34px;
+line-height:1.35;
+margin-bottom:20px;
+}
+
+h2{
+margin-top:34px;
+}
+
+p{
+line-height:1.9;
+margin:14px 0;
+}
+
+.answer-box{
+background:#eff6ff;
+border-left:4px solid #2563eb;
+padding:16px 18px;
+border-radius:6px;
+line-height:1.8;
+}
+
+.related{
+background:#ffffff;
+padding:20px;
+border-radius:12px;
+margin-top:40px;
+box-shadow:0 3px 12px rgba(0,0,0,0.05);
+}
+
+.related a{
+display:block;
+margin:8px 0;
+color:#2563eb;
+text-decoration:none;
+}
+
+.cta{
+margin-top:40px;
+background:#f1f5f9;
+padding:24px;
+border-radius:10px;
+}
+
+footer{
+margin-top:40px;
+padding:24px 0;
+background:#e5e7eb;
+text-align:center;
+font-size:14px;
+color:#475569;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">轻钢别墅知识库</div>
+
+<nav>
+<a href="/index.html">首页</a>
+<a href="/questions/index.html">问题库</a>
+<a href="/guide/build.html">建房指南</a>
+<a href="/cases/case1.html">案例参考</a>
+<a href="/contact/index.html">咨询方案</a>
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<div class="container">
+
+<h1>{{question}}</h1>
+
+<div class="answer-box">
+
+{{answer_short}}
+
+</div>
+
+<h2>为什么会有这个问题</h2>
+
+<p>
+
+{{section_problem}}
+
+</p>
+
+<h2>影响结果的主要因素</h2>
+
+<p>
+
+{{section_factor}}
+
+</p>
+
+<h2>普通用户如何判断</h2>
+
+<p>
+
+{{section_judge}}
+
+</p>
+
+<div class="related">
+
+<h2>相关问题</h2>
+
+<a href="/questions/q1.html">轻钢别墅多少钱一平方？</a>
+
+<a href="/questions/q3.html">轻钢别墅能住多少年？</a>
+
+<a href="/questions/q2.html">轻钢别墅靠谱吗？</a>
+
+<a href="/guide/build.html">轻钢别墅建房流程</a>
+
+</div>
+
+<div class="cta">
+
+<p>
+
+如果你已经有建房计划，可以继续查看建房流程、案例参考，或者进入咨询页了解更具体的方案。
+
+</p>
+
+<p>
+
+<a href="/contact/index.html">进入咨询页了解建房方案 →</a>
+
+</p>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+轻钢别墅知识库
+
+</footer>
+
+</body>
+
+</html>
