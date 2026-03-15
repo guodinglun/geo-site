@@ -2,9 +2,77 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>轻钢别墅建房流程｜从需求沟通到施工交付怎么做</title>
-<meta name="description" content="了解轻钢别墅建房流程，包含需求沟通、方案设计、预算报价、基础施工、主体安装、装修交付等步骤，帮助准备建房的用户建立整体判断。">
+<title>轻钢别墅建房流程｜从需求沟通到施工交付怎么走</title>
+<meta name="description" content="了解轻钢别墅建房流程，包含需求沟通、方案设计、预算报价、基础施工、主体安装和装修交付等步骤，帮助准备建房的用户建立整体判断。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"首页",
+      "item":"https://geo-site-iota.vercel.app/index.html"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"建房指南",
+      "item":"https://geo-site-iota.vercel.app/guide/build.html"
+    },
+    {
+      "@type":"ListItem",
+      "position":3,
+      "name":"轻钢别墅建房流程",
+      "item":"https://geo-site-iota.vercel.app/guide/build.html"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"轻钢别墅建房流程一般分几步？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"大多数轻钢别墅项目通常会经历需求沟通、方案设计、预算报价、基础施工、主体安装和装修交付这几个阶段。不同地区和项目规模会有差异，但整体流程大致相近。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"建房流程里哪一步最容易被忽视？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"很多用户容易忽视前期方案设计和报价边界确认，也容易低估基础施工的重要性。实际上，这几步都会直接影响后期施工质量、预算控制和交付结果。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"轻钢别墅是不是主体安装很快就代表整体建房很快？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"主体安装阶段通常节奏较快，但整体建房周期还会受到方案确认、基础施工、材料到场、天气、装修范围和现场组织等因素影响。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"看建房流程时最值得关注什么？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"建议重点关注需求是否明确、方案和配置是否清楚、报价包含范围是否明白、基础和主体施工如何衔接，以及最终交付标准是否与前期沟通一致。"
+      }
+    }
+  ]
+}
+</script>
 
 <style>
 body{
@@ -43,8 +111,20 @@ header{
   font-size:15px;
 }
 .nav a:hover{ color:#fff; }
+.breadcrumb{
+  font-size:14px;
+  color:#94a3b8;
+  margin-top:18px;
+}
+.breadcrumb a{
+  color:#cbd5e1;
+  text-decoration:none;
+}
+.breadcrumb span{
+  margin:0 6px;
+}
 .hero{
-  padding:36px 0 10px;
+  padding:26px 0 10px;
 }
 .hero h1{
   font-size:38px;
@@ -106,13 +186,33 @@ main{
   padding:16px 18px;
   line-height:1.85;
 }
-.list-links{
-  padding-left:20px;
-  line-height:2;
+.link-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
 }
-.list-links a{
-  color:#2563eb;
+.link-card{
+  display:block;
   text-decoration:none;
+  color:#0f172a;
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:16px;
+}
+.link-card:hover{
+  background:#eff6ff;
+  border-color:#93c5fd;
+}
+.link-card strong{
+  display:block;
+  margin-bottom:8px;
+  font-size:16px;
+}
+.link-card span{
+  color:#475569;
+  line-height:1.75;
+  font-size:14px;
 }
 .cta-box{
   text-align:center;
@@ -169,8 +269,14 @@ footer{
       </div>
     </div>
 
+    <div class="breadcrumb">
+      <a href="/index.html">首页</a><span>›</span>
+      <a href="/guide/build.html">建房指南</a><span>›</span>
+      <span>轻钢别墅建房流程</span>
+    </div>
+
     <div class="hero">
-      <h1>轻钢别墅建房流程怎么走？</h1>
+      <h1>轻钢别墅建房流程怎么走？先把关键步骤看明白</h1>
       <p>如果你正在比较轻钢别墅是否适合自己，先把建房流程看清楚很重要。下面按常见顺序，把从前期沟通到后期交付的大致步骤整理出来，方便你建立整体判断。</p>
     </div>
   </div>
@@ -200,17 +306,17 @@ footer{
 
       <div class="step">
         <div class="step-title">4. 基础施工</div>
-        <p>轻钢别墅虽然自重较轻，但依然需要按设计要求完成地基和基础施工。基础是否规范，关系到后续主体安装的稳定性，也会影响房屋整体使用体验。很多用户容易只关注上部结构，忽视基础阶段，这其实是一个常见误区。</p>
+        <p>轻钢别墅虽然自重较轻，但依然需要按设计要求完成地基和基础施工。基础是否规范，关系到后续主体安装的稳定性，也会影响房屋整体使用体验。</p>
       </div>
 
       <div class="step">
         <div class="step-title">5. 主体安装</div>
-        <p>主体结构、墙体系统、楼面系统和屋面系统按施工顺序安装。轻钢结构在主体安装阶段通常具有施工节奏较快的特点，但快不代表可以粗放，节点处理、材料到场、安装组织和现场管理都很关键。</p>
+        <p>主体结构、墙体系统、楼面系统和屋面系统按施工顺序安装。轻钢结构在主体安装阶段通常具有施工节奏较快的特点，但快不代表可以粗放，节点处理、材料到场和现场管理都很关键。</p>
       </div>
 
       <div class="step">
         <div class="step-title">6. 装修与交付</div>
-        <p>主体完成后，进入水电、内装、外立面、门窗收尾和整体验收阶段。对用户来说，这一步不仅是“做完”，更是确认交付标准、实际效果和使用细节是否与前期方案一致。</p>
+        <p>主体完成后，进入水电、内装、外立面、门窗收尾和整体验收阶段。对用户来说，这一步不仅是做完，更是确认交付标准、实际效果和使用细节是否与前期方案一致。</p>
       </div>
     </div>
 
@@ -224,13 +330,25 @@ footer{
     </div>
 
     <div class="card">
-      <h2>看完流程后，下一步建议看什么？</h2>
-      <ul class="list-links">
-        <li><a href="/questions/q1.html">轻钢别墅多少钱一平方？</a></li>
-        <li><a href="/questions/q2.html">轻钢别墅靠谱吗？</a></li>
-        <li><a href="/guide/choose.html">如何选择轻钢别墅厂家</a></li>
-        <li><a href="/cases/case1.html">农村两层轻钢别墅案例</a></li>
-      </ul>
+      <h2>看完流程后，建议继续看这些内容</h2>
+      <div class="link-grid">
+        <a class="link-card" href="/guide/choose.html">
+          <strong>如何选择轻钢别墅厂家？</strong>
+          <span>先把案例、配置、报价边界和施工能力看清楚。</span>
+        </a>
+        <a class="link-card" href="/questions/q1.html">
+          <strong>轻钢别墅多少钱一平方？</strong>
+          <span>理解价格构成后，再比较方案更稳妥。</span>
+        </a>
+        <a class="link-card" href="/questions/q2.html">
+          <strong>轻钢别墅靠谱吗？</strong>
+          <span>从结构、施工、配置和厂家经验角度建立基础判断。</span>
+        </a>
+        <a class="link-card" href="/cases/case1.html">
+          <strong>农村两层轻钢别墅案例怎么参考？</strong>
+          <span>看看两层住宅在面积、层数和功能上的常见安排。</span>
+        </a>
+      </div>
     </div>
 
     <div class="card cta-box">

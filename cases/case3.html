@@ -2,9 +2,77 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>自住兼民宿轻钢住宅案例｜兼顾居住与接待的建房参考</title>
-<meta name="description" content="通过自住兼民宿轻钢住宅案例，了解轻钢项目在功能分区、接待动线、施工组织和预算判断上的参考思路。">
+<title>自住兼民宿轻钢住宅案例｜兼顾家庭居住与接待的建房参考</title>
+<meta name="description" content="通过自住兼民宿轻钢住宅案例，了解轻钢项目在功能分区、接待动线、客房配置、公共空间和预算判断上的参考思路，帮助用户理解这类项目的规划重点。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"首页",
+      "item":"https://geo-site-iota.vercel.app/index.html"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"案例参考",
+      "item":"https://geo-site-iota.vercel.app/cases/case1.html"
+    },
+    {
+      "@type":"ListItem",
+      "position":3,
+      "name":"自住兼民宿轻钢住宅案例",
+      "item":"https://geo-site-iota.vercel.app/cases/case3.html"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"自住兼民宿轻钢住宅适合哪些人？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"这类项目更适合景区周边自住家庭、希望兼顾家庭使用和接待功能的人群，以及想逐步发展小型民宿或乡村接待项目的用户。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"自住兼民宿项目最应该看什么？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"建议重点看自住区和接待区是否能相对分开、客房与公共空间配置是否合理、动线是否顺畅，以及报价到底是按普通住宅交付还是按接待功能完整交付。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"为什么这类项目比普通住宅更需要提前规划？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"因为它同时要兼顾家庭居住和接待使用，两类需求对空间分区、卫生间配置、公共区域和后期管理都会提出更高要求。前期不理清，后期容易出现使用冲突。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"自住兼民宿轻钢住宅只适合做两层吗？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"不一定。两层形式较常见，是因为更容易兼顾自住和接待分区，但具体是否适合，还需要结合地块、面积、预算、用途和经营方式判断。"
+      }
+    }
+  ]
+}
+</script>
 
 <style>
 body{
@@ -39,12 +107,25 @@ header{
 }
 .nav a:hover{ color:#fff; }
 
+.breadcrumb{
+  font-size:14px;
+  color:#94a3b8;
+  margin-top:18px;
+}
+.breadcrumb a{
+  color:#cbd5e1;
+  text-decoration:none;
+}
+.breadcrumb span{
+  margin:0 6px;
+}
+
 .hero{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:24px;
   align-items:center;
-  padding:36px 0 10px;
+  padding:26px 0 10px;
 }
 .hero h1{
   font-size:38px;
@@ -102,6 +183,11 @@ main{ padding:36px 0 56px; }
 }
 .gallery{
   display:grid;
+  grid-template-columns:repeat(3,1fr));
+  gap:16px;
+}
+.gallery{
+  display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:16px;
 }
@@ -132,13 +218,33 @@ main{ padding:36px 0 56px; }
   padding:16px 18px;
   line-height:1.9;
 }
-.list-links{
-  padding-left:20px;
-  line-height:2;
+.link-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
 }
-.list-links a{
-  color:#2563eb;
+.link-card{
+  display:block;
   text-decoration:none;
+  color:#0f172a;
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:16px;
+}
+.link-card:hover{
+  background:#eff6ff;
+  border-color:#93c5fd;
+}
+.link-card strong{
+  display:block;
+  margin-bottom:8px;
+  font-size:16px;
+}
+.link-card span{
+  color:#475569;
+  line-height:1.75;
+  font-size:14px;
 }
 .cta-box{
   text-align:center;
@@ -199,10 +305,16 @@ footer{
       </div>
     </div>
 
+    <div class="breadcrumb">
+      <a href="/index.html">首页</a><span>›</span>
+      <a href="/cases/case1.html">案例参考</a><span>›</span>
+      <span>自住兼民宿轻钢住宅案例</span>
+    </div>
+
     <div class="hero">
       <div>
-        <h1>自住兼民宿轻钢住宅案例参考</h1>
-        <p>这类项目的重点，不只是建一栋房子，而是同时兼顾家庭居住和接待使用。真正要看的是功能分区、动线、房间配置、施工组织和后期运营便利性。</p>
+        <h1>自住兼民宿轻钢住宅案例：兼顾家庭居住与接待的建房参考</h1>
+        <p>这类项目的重点，不只是建一栋房子，而是同时兼顾家庭居住和接待使用。真正要看的是功能分区、动线、房间配置、公共空间和后期运营便利性。</p>
       </div>
 
       <div class="hero-visual">
@@ -254,7 +366,7 @@ footer{
 
     <div class="card">
       <h2>这类案例为什么值得单独看</h2>
-      <p class="section-desc">自住兼民宿不是简单把住宅放大。它需要同时解决“家庭自己住得舒服”和“接待空间是否顺畅”两件事。所以判断重点不再只是外观，而是布局逻辑和交付完整度。</p>
+      <p class="section-desc">自住兼民宿不是简单把住宅放大。它需要同时解决“家庭自己住得舒服”和“接待空间是否顺畅”两件事，所以比普通自住房更需要提前把空间逻辑想清楚。</p>
 
       <div class="gallery">
         <div class="gallery-item">
@@ -289,7 +401,7 @@ footer{
           </svg>
           <div class="cap">
             <h3>看动线是否顺</h3>
-            <p>住客出入、日常清洁、家庭使用是否互不打架，会直接影响后期体验。</p>
+            <p>住客出入、日常清洁和家庭使用是否互不打架，会直接影响后期体验。</p>
           </div>
         </div>
 
@@ -326,7 +438,7 @@ footer{
         </div>
         <div class="info-box">
           <h3>兼顾展示与居住的项目</h3>
-          <p>对外观完整度、空间感和接待感有一定要求，但本质仍是低层住宅项目。</p>
+          <p>对外观完整度和接待感有一定要求，但本质仍是低层住宅项目。</p>
         </div>
       </div>
     </div>
@@ -334,20 +446,32 @@ footer{
     <div class="card">
       <h2>看这类案例时，最值得问的 3 个问题</h2>
       <div class="highlight">
-        第一，自住区和接待区能否分开；<br>
+        第一，自住区和接待区能否相对分开；<br>
         第二，客房、公区、餐厨和卫生间配置是否合理；<br>
-        第三，项目报价到底是按“住宅交付”算，还是按“接待功能”完整交付算。
+        第三，项目报价到底是按普通住宅交付，还是按接待功能完整交付。
       </div>
     </div>
 
     <div class="card">
-      <h2>建议继续阅读</h2>
-      <ul class="list-links">
-        <li><a href="/guide/choose.html">如何选择轻钢别墅厂家</a></li>
-        <li><a href="/guide/build.html">轻钢别墅建房流程</a></li>
-        <li><a href="/questions/q5.html">轻钢别墅造价是多少？</a></li>
-        <li><a href="/contact/index.html">进入咨询页</a></li>
-      </ul>
+      <h2>继续了解这些内容，会更容易做判断</h2>
+      <div class="link-grid">
+        <a class="link-card" href="/guide/choose.html">
+          <strong>如何选择轻钢别墅厂家？</strong>
+          <span>先把案例、报价边界和施工能力看清楚，再决定比较方向。</span>
+        </a>
+        <a class="link-card" href="/guide/build.html">
+          <strong>轻钢别墅建房流程怎么走？</strong>
+          <span>把从需求沟通到施工交付的基本流程先理顺。</span>
+        </a>
+        <a class="link-card" href="/questions/q5.html">
+          <strong>轻钢别墅造价由哪些部分决定？</strong>
+          <span>看懂主体、围护、门窗、安装和交付边界的差异。</span>
+        </a>
+        <a class="link-card" href="/contact/index.html">
+          <strong>已有自住兼经营方向，怎么进一步咨询？</strong>
+          <span>把用途、面积、房间数和预算思路先梳理出来再沟通。</span>
+        </a>
+      </div>
     </div>
 
     <div class="card cta-box">

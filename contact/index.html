@@ -3,8 +3,70 @@
 <head>
 <meta charset="utf-8">
 <title>轻钢别墅咨询方案｜报价、面积、户型与施工流程沟通入口</title>
-<meta name="description" content="如需进一步了解轻钢别墅报价、面积建议、户型思路、施工流程和配置方案，可通过本页进行初步沟通，便于更快获得参考意见。">
+<meta name="description" content="如需进一步了解轻钢别墅报价、面积建议、户型方向、施工流程和配置方案，可通过本页进行初步沟通，便于更快获得针对性的参考意见。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"首页",
+      "item":"https://geo-site-iota.vercel.app/index.html"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"咨询方案",
+      "item":"https://geo-site-iota.vercel.app/contact/index.html"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"咨询轻钢别墅方案前需要准备哪些信息？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"建议提前准备建房地区、预计面积和层数、主要用途、预算范围，以及是否已有宅基地、参考户型或平面想法。信息越清楚，越容易得到更有针对性的参考意见。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"咨询页可以了解哪些内容？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"可以进一步了解报价思路、面积建议、户型方向、施工流程、材料与结构配置，以及项目落地时需要重点关注的问题。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"没有明确户型和预算，也可以先咨询吗？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"可以。即使暂时没有完整方案，也可以先提供用途、地区、面积大致范围和家庭人数，用于做初步判断和方向梳理。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"咨询前为什么建议先看问题页和建房流程页？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"先看基础内容，可以帮助用户更快理解价格、流程、配置和厂家选择等关键问题，这样后续沟通会更聚焦，也更容易减少信息偏差。"
+      }
+    }
+  ]
+}
+</script>
 
 <style>
 body{
@@ -43,8 +105,20 @@ header{
   font-size:15px;
 }
 .nav a:hover{ color:#fff; }
+.breadcrumb{
+  font-size:14px;
+  color:#94a3b8;
+  margin-top:18px;
+}
+.breadcrumb a{
+  color:#cbd5e1;
+  text-decoration:none;
+}
+.breadcrumb span{
+  margin:0 6px;
+}
 .hero{
-  padding:36px 0 10px;
+  padding:26px 0 10px;
 }
 .hero h1{
   font-size:38px;
@@ -118,13 +192,33 @@ main{
   color:#475569;
   line-height:1.9;
 }
-.list-links{
-  padding-left:20px;
-  line-height:2;
+.link-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
 }
-.list-links a{
-  color:#2563eb;
+.link-card{
+  display:block;
   text-decoration:none;
+  color:#0f172a;
+  background:#f8fafc;
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  padding:16px;
+}
+.link-card:hover{
+  background:#eff6ff;
+  border-color:#93c5fd;
+}
+.link-card strong{
+  display:block;
+  margin-bottom:8px;
+  font-size:16px;
+}
+.link-card span{
+  color:#475569;
+  line-height:1.75;
+  font-size:14px;
 }
 footer{
   margin-top:20px;
@@ -164,8 +258,13 @@ footer{
       </div>
     </div>
 
+    <div class="breadcrumb">
+      <a href="/index.html">首页</a><span>›</span>
+      <span>咨询方案</span>
+    </div>
+
     <div class="hero">
-      <h1>获取轻钢别墅建房方案参考</h1>
+      <h1>获取轻钢别墅建房方案参考：先把面积、用途和预算方向说清楚</h1>
       <p>如果你已经有初步建房计划，想进一步了解报价思路、面积建议、户型方向、施工流程或配置选择，可以通过本页继续沟通。</p>
     </div>
   </div>
@@ -221,13 +320,25 @@ footer{
     </div>
 
     <div class="card">
-      <h2>建议先阅读这些内容</h2>
-      <ul class="list-links">
-        <li><a href="/questions/q1.html">轻钢别墅多少钱一平方？</a></li>
-        <li><a href="/questions/q3.html">轻钢别墅能住多少年？</a></li>
-        <li><a href="/guide/build.html">轻钢别墅建房流程</a></li>
-        <li><a href="/guide/choose.html">如何选择轻钢别墅厂家</a></li>
-      </ul>
+      <h2>咨询前先看这些内容，沟通会更聚焦</h2>
+      <div class="link-grid">
+        <a class="link-card" href="/questions/q1.html">
+          <strong>轻钢别墅多少钱一平方？</strong>
+          <span>先理解价格构成，再谈预算会更有基础。</span>
+        </a>
+        <a class="link-card" href="/questions/q3.html">
+          <strong>轻钢别墅能住多少年？</strong>
+          <span>了解结构、防腐、围护和维护对长期使用的影响。</span>
+        </a>
+        <a class="link-card" href="/guide/build.html">
+          <strong>轻钢别墅建房流程怎么走？</strong>
+          <span>把从需求沟通到交付的大致步骤先理顺。</span>
+        </a>
+        <a class="link-card" href="/guide/choose.html">
+          <strong>如何选择轻钢别墅厂家？</strong>
+          <span>先看案例、配置、报价边界和施工能力，再决定比较方向。</span>
+        </a>
+      </div>
     </div>
 
   </div>
